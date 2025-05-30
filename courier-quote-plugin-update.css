@@ -1,0 +1,315 @@
+.courier-quote-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+button.prev-btn,
+button#getQuote {
+
+    cursor:pointer;
+}
+
+button#getQuote {
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+}
+p.totaltax {
+    font-size: 15px !important;
+    font-weight: bold;
+}
+#quoteResult {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+.step {
+    display: none;
+}
+.step.active {
+    display: block;
+}
+button.prev-btn{
+    color: #FFFFFF !important;
+    border-width: 2px !important;
+    border-color: #2D405E;
+    border-radius: 0px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: 'Steagal Light', Helvetica, Arial, Lucida, sans-serif !important;
+    text-transform: uppercase !important;
+    background-color: #2d405e !important;
+    padding-top: 15px !important;
+    padding-right: 60px !important;
+    padding-bottom: 14px !important;
+    padding-left: 60px !important;
+    margin-top: 14px !important;
+    margin-bottom: 0 !important;
+}
+.fieldset {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+	justify-content: space-between;
+	gap: 10px!important;
+}
+.fieldset-wrap {
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px !important;
+}
+button.next-btn {
+	color: #FFFFFF !important;
+    border-width: 2px !important;
+    border-color: #2D405E;
+    border-radius: 0px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: 'Steagal Light', Helvetica, Arial, Lucida, sans-serif !important;
+    text-transform: uppercase !important;
+    background-color: #2d405e !important;
+    height: 100% !important;
+    padding: 25px !important;
+    margin: 0 !important;
+    border-radius: 7px;
+}
+.fieldset-wrap {
+    border: 1px solid #c1c1c1;
+    border-radius: 7px;
+    padding: 10px !important;
+}
+.fieldset-wrap div:nth-child(2) {
+    border-right: 1px solid #c1c1c1;
+}
+button.next-btn {
+    width: 500px !important;
+}
+.time-options {
+    display: flex;
+    flex-direction: row !important;
+}
+select#timeSelection {
+    border: 1px solid gainsboro;
+    background: transparent;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: opacity 0.3 sease;
+}
+/* Container for the options */
+.time-options {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Hide the radio inputs */
+input[type="radio"] {
+  visibility: hidden;
+  position: absolute;
+}
+
+/* Style the labels to look like buttons */
+.time-options label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7.6px 15px;
+  background-color: #dfdfdf;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 14px;
+  font-weight: bold;
+	width:100%;
+}
+
+/* Change appearance when the radio inside the label is checked */
+.time-options label:has(> input[type="radio"]:checked) {
+  background-color: #2d405e;
+  color: #fff !important;
+}
+
+/* Hover effect for labels when the radio inside is hovered and not checked */
+.time-options label:has(> input[type="radio"]:hover:not(:checked)) {
+  background-color: #2d405e;
+  color:white !important;
+}
+
+/* Style the date input */
+#customDate {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: opacity 0.3s ease;
+}
+
+img.cmbwL {
+    width: 25px;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+input#collectFrom,input#deliverTo,input#email   {
+    padding-left: 40px !important;
+    border:none !important;
+}
+
+input#customDate,select#timeSelection{
+    width: 100% !important;
+}
+section.custom-progress-container.mx-auto.mt-4.py-4.rounded-lg.hidden.md\:flex.items-center.justify-between.custom-progress-details.mx-6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #2d405e;
+    padding: 20px;
+    border-radius: 10px;
+    color: white !important;
+    align-items: center;
+    margin-bottom:30px;
+}
+
+.justify-around {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.flex.items-center {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    color: white;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+h6.text-white.text-md.font-light {
+    color: #cacaca !important;
+}
+
+a.text-white.text-lg.font-bold.mr-3 {
+    width: 100px;
+	color: white;
+    font-weight: bold;
+}
+span.font-bold {
+    font-weight: bold;
+    color: white;
+    padding-top: 5px;
+    display: block;
+}
+p.total {
+    font-size: 1.125rem!important;
+    font-weight: bold;
+}
+p.total .price {
+    font-weight: bold !important;
+}
+.vehicle-option.selected {
+    color: white;
+    background: #2d405e;
+}
+
+.vehicle-option.selected h4 {
+    color: white;
+}
+
+.vehicle-option.selected {
+    background: #2d405e;
+    color: white;
+}
+
+.vehicle-option.selected h4 {
+    color: white;
+}
+
+.vehicle-option img {
+    border-radius: 10px;
+}
+.vehicle-option:hover {
+    cursor: pointer!important;
+}
+
+.vehicle-option label:hover {
+    cursor: pointer!important;
+}
+@media(max-width:1130px){
+	button.next-btn {
+    width: 100% !important;
+}
+
+.fieldset-wrap {
+    width: 100% !important;
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: column !important;
+}
+
+.time-options {
+    width: 100%!important;
+}
+}
+@media(max-width:953px){
+	.fieldset-wrap {
+    flex-direction: column !important;
+}
+
+.fieldset-wrap div:nth-child(2) {
+    border: none!important;
+}
+
+.fieldset-wrap div {
+    width: 100% !important;
+}
+	.time-options {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+}
+
+/* input#customDate {
+    grid-column: span 2;
+} */
+	section.custom-progress-container.mx-auto.mt-4.py-4.rounded-lg.hidden.md\:flex.items-center.justify-between.custom-progress-details.mx-6 {
+    display: flex;
+		flex-direction: column!important;
+		align-items: flex-end;
+	}
+	.justify-around {
+    display: grid!important;
+    grid-template-columns: 1fr 1fr !important;
+}
+	.vehicle-options {
+    grid-template-columns: 1fr 1fr !important;
+}
+}
+@media(max-width:540px){
+	
+
+
+.vehicle-options {
+    display: flex!important;
+    flex-direction: column!important;
+}
+	}
+@media (max-width: 450px) {
+    .time-options {
+        display: flex!important;
+        flex-direction: column !important;
+    }
+}
+
+/* 
+div#step2 {
+    display: block !important;
+} */
